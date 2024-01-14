@@ -13,8 +13,8 @@ public class Main {
         List<Ticket> tickets = new Parse().parseJSON();
         TicketService ticketService = new TicketService();
 
-        System.out.println(ticketService.getMinTimeBetweenTwoAirportsForAllCarrier(args[0], args[1], tickets));
+        System.out.println(ticketService.getMinTimeBetweenTwoAirportsForAllCarrier("vvo", "tlv", tickets));
 
-        System.out.println(ticketService.getDifferenceBetweenAveragePriceAndMedianForTwoAirports(args[0], args[1], tickets));
+        System.out.println(ticketService.getDifferenceBetweenAveragePriceAndMedianForTwoAirports("vvo", "tlv", tickets));
     }
 }
